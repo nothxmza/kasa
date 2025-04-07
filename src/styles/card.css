@@ -1,0 +1,11 @@
+.wrapperCard {
+  display: flex;
+  background-color: #F6F6F6;
+  padding: 50px;
+  border-radius: 25px;
+}
+.wrapperCard .gridCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
