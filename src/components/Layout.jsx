@@ -2,8 +2,6 @@ import { NavLink } from 'react-router';
 import { Logo } from './Logo';
 import  '../styles/layout.css';
 
-
-
 export const Layout = ({children}) => {
 	return(
 		<div className="layout">

@@ -1,5 +1,4 @@
-
-
+import '../styles/card.css'
 
 export const Card = ({title,cover}) => {
 	return(
