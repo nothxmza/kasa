@@ -3,6 +3,7 @@ import {data} from "../data/data";
 import { useParams } from "react-router";
 import { Carousel } from "../components/Carousel";
 import { Rating } from "../components/Rating";
+import { Tags } from "../components/tags";
 const Lodging = () => {
 	const id = useParams().id;
 	const lodging = data.filter((item) => item.id === id)[0];
@@ -34,9 +35,7 @@ console.log(lodging);
 					</div>
 					<div style={{display: "flex", justifyContent: "space-between"}}>
 						<div>
-							{lodging.tags.map((tag, index) => (
-								<span key={index} className="tag">{tag}</span>
-							))}
+							<Tags tags={lodging.tags} />
 						</div>
 						<div>
 							{<Rating rating={lodging.rating} />}
