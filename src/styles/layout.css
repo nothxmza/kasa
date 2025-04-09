@@ -48,6 +48,7 @@
   background-color: #000000;
   color: #FFFFFF;
   width: 100%;
+  padding: 50px 0 50px 0;
 }
 .layout footer .wrapperContentFooter {
   display: flex;
@@ -57,7 +58,6 @@
   gap: 30px;
 }
 .layout footer .wrapperContentFooter p {
-  margin: 0;
   font-size: 24px;
   font-weight: 500;
   font-family: "Montserrat", sans-serif;
@@ -109,11 +109,17 @@
   .layout nav ul li a {
     font-size: 14px;
   }
-  .layout main {
-    margin: 10px 0;
-  }
   .layout main .wrapperContentMain {
     padding: 0px 10px;
+  }
+  .layout footer {
+    padding: 20px 0 20px 0;
+  }
+}
+@media (max-width: 500px) {
+  .layout footer svg {
+    width: 80px;
+    height: 30px;
   }
   .layout footer .wrapperContentFooter {
     text-align: center;
