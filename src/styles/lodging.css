@@ -3,3 +3,64 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.wrapperContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapperContent .wrapperInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapperContent .wrapperInfo .wrapperData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.wrapperContent .wrapperInfo .wrapperData h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.wrapperContent .wrapperInfo .wrapperData h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.wrapperContent .wrapperInfo .wrapperData .titleName {
+  color: #FF6060;
+}
+.wrapperContent .wrapperInfo .wrapperData .alignTextEnd {
+  text-align: end;
+}
+.wrapperContent .wrapperInfo .wrapperData .wrapperNameAndImg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.wrapperContent .wrapperInfo .wrapperData .wrapperNameAndImg img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrapperContent .wrapperDropDown {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .wrapperInfo {
+    flex-direction: column;
+  }
+  .wrapperInfo .starsAndName {
+    flex-direction: row-reverse !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .wrapperDropDown {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

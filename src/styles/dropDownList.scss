@@ -1,0 +1,42 @@
+
+.dropDownList {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	.dropDownTitle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #FF6060;
+		border-radius: 10px;
+		cursor: pointer;
+		padding: 10px 20px;
+		color: white;
+	}
+	.dropDownContent {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		padding: 20px;
+		background-color: F7F7F7;
+		border-radius: 0 0 10px 10px;
+	}
+}
+
+
+//media queries
+@media (max-width: 1300px) {
+	.dropDownList {
+		width: 480px;
+	}
+}
+@media (max-width: 1000px) {
+	.dropDownList {
+		width: 400px;
+	}
+}
+@media (max-width: 768px) {
+	.dropDownList {
+		width: 100%;
+	}
+}

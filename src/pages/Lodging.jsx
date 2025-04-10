@@ -4,6 +4,9 @@ import { useParams } from "react-router";
 import { Carousel } from "../components/Carousel";
 import { Rating } from "../components/Rating";
 import { Tags } from "../components/tags";
+import { DropDownList } from "../components/DropDownList";
+import "../styles/lodging.css";
+
 const Lodging = () => {
 	const id = useParams().id;
 	const lodging = data.filter((item) => item.id === id)[0];
@@ -19,27 +22,33 @@ console.log(lodging);
 				<div>
 					<Carousel img={lodging.pictures}/>
 				</div>
-				<div style={{display: "flex", flexDirection: "column", gap: "10px"}}>
-					<div style={{display: "flex", justifyContent: "space-between"}}>
-						<div>
-							<h1 style={{fontSize: "36px", fontWeight: "500", color: "#FF6060"}} >{lodging.title}</h1>
-							<h3 style={{fontSize: "18px", fontWeight: "500"}}>{lodging.location}</h3>
-						</div>
-						<div style={{display: "flex", alignItems: "center", gap: "10px"}}>
+				<div className="wrapperContent">
+					<div className="wrapperInfo">
+						<div className="wrapperData">
 							<div>
-								<h3 style={{fontSize: "18px", fontWeight: "500",color:"#FF6060"}}>{lodging.host.name.split(" ")[0]}</h3>
-								<h3 style={{fontSize: "18px", fontWeight: "500",color:"#FF6060", textAlign:"end" }}>{lodging.host.name.split(" ")[1]}</h3>
+								<h1 >{lodging.title}</h1>
+								<h3>{lodging.location}</h3>
 							</div>
-							<img style={{width: "64px", height: "64px", objectFit: "cover", borderRadius: "50%"}} src={lodging.host.picture} alt="" />
+							<div>
+								<Tags tags={lodging.tags} />
+							</div>
+						</div>
+						<div className="wrapperData starsAndName">
+							<div className="wrapperNameAndImg">
+								<div>
+									<h3 className="titleName">{lodging.host.name.split(" ")[0]}</h3>
+									<h3 className="alignTextEnd titleName">{lodging.host.name.split(" ")[1]}</h3>
+								</div>
+								<img src={lodging.host.picture} alt="" />
+							</div>
+							<div>
+								{<Rating rating={lodging.rating} />}
+							</div>
 						</div>
 					</div>
-					<div style={{display: "flex", justifyContent: "space-between"}}>
-						<div>
-							<Tags tags={lodging.tags} />
-						</div>
-						<div>
-							{<Rating rating={lodging.rating} />}
-						</div>
+					<div className="wrapperDropDown">
+						<DropDownList title="Description" content={lodging.description} />
+						<DropDownList title="Équipements" content={lodging.equipments} />
 					</div>
 				</div>
 			</div>

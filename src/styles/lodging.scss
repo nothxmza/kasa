@@ -3,3 +3,66 @@
   flex-direction: column;
   gap:20px;
 }
+
+.wrapperContent{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  .wrapperInfo{
+    display: flex;
+    justify-content: space-between;
+    .wrapperData{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      h1{
+        font-size: 36px;
+        font-weight: 500;
+        color: #FF6060;
+      }
+      h3{
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .titleName{
+        color: #FF6060;
+      }
+      .alignTextEnd{
+        text-align: end;
+      }
+      .wrapperNameAndImg{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .wrapperDropDown{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+//media queries
+
+@media (max-width: 768px) {
+  .wrapperInfo{
+    flex-direction: column;
+    .starsAndName{
+      flex-direction: row-reverse!important;
+      justify-content: space-between;
+      align-items: center;
+    }
+   
+  }
+  .wrapperDropDown{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
