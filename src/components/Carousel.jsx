@@ -18,11 +18,17 @@ export const Carousel = ({img}) => {
 		);
 	};
 
+	console.log(img.length);
 	return (
 		<div className="carousel">
 			<img src={img[currentIndex]} alt="Carousel" className="carouselImage" />
-			<button className="buttonLeft" onClick={prevImage}><img src={chevronLeft} alt="chevron left" /></button>
-			<button className="buttonRight" onClick={nextImage}> <img src={chevronRight} alt="chevron right" /> </button>
+			{img.length > 1 && (
+				<>
+					<p className="count">{`${currentIndex + 1 } / ${img.length}`}</p>
+					<button className="buttonLeft" onClick={prevImage}><img src={chevronLeft} alt="chevron left" /></button>
+					<button className="buttonRight" onClick={nextImage}> <img src={chevronRight} alt="chevron right" /> </button>
+				</>
+			)}
 		</div>
 	);
 }

@@ -18,7 +18,6 @@ export const DropDownList = ({title, content}) => {
 		}
 	};
 
-	console.log(content)
 	return (
 		<div className="dropDownList">
 			<div className={`dropDownHeader ${isOpen ? 'open' : ''}`}>
