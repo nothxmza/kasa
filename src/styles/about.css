@@ -1,0 +1,29 @@
+.wrapperAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.wrapperAbout .containerAbout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.wrapperAbout .containerAbout .dropDownList {
+  max-width: 80% !important;
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .wrapperAbout {
+    gap: 20px;
+  }
+  .wrapperAbout .containerAbout {
+    gap: 10px;
+  }
+  .wrapperAbout .containerAbout .dropDownList {
+    max-width: none !important;
+    width: 100% !important;
+  }
+}

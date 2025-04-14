@@ -1,0 +1,40 @@
+.wrapperNotFound {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  gap: 100px;
+  text-align: center;
+  margin: 50px auto;
+  flex: 1;
+  h1{
+    font-size: 288px;
+    color: #FF6060;
+    font-weight: 700
+  }
+  p{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+  }
+  a{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+  }
+}
+
+//media queries
+
+@media (max-width: 500px){
+  .wrapperNotFound{
+    margin: 20px auto 50px auto;
+    h1{
+      font-size: 96px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+  
+}

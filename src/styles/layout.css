@@ -109,9 +109,6 @@
   .layout main .wrapperContentMain {
     padding: 0px 20px;
   }
-  .layout footer {
-    height: 150px;
-  }
   .layout footer .wrapperContentFooter {
     gap: 20px;
   }
@@ -133,9 +130,6 @@
   }
   .layout main .wrapperContentMain {
     padding: 0px 10px;
-  }
-  .layout footer {
-    padding: 20px 0 20px 0;
   }
 }
 @media (max-width: 500px) {

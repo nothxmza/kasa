@@ -34,3 +34,13 @@
   background: transparent;
   border: none;
 }
+
+@media (max-width: 500px) {
+  .carousel {
+    height: 300px;
+  }
+  .carousel .buttonLeft img, .carousel .buttonRight img {
+    width: 10px;
+    height: 20px;
+  }
+}

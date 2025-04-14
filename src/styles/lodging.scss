@@ -67,7 +67,32 @@
         display: flex;
         flex-direction: column;
         gap: 10px;
+        h1{
+          font-size: 18px;
+        }
+        h3{
+          font-size: 14px;
+        }
       }
+      .tags{
+        font-size: 10px;
+      }
+      .rating{
+        svg{
+          width: 18px;
+          height: 18px;
+        }
+      }
+      .wrapperNameAndImg{
+        h3{
+          font-size: 12px;
+        }
+        img{
+          width: 32px!important;
+          height: 32px!important;
+        }
+      }
+      
     }
     .starsAndName{
       flex-direction: row-reverse!important;

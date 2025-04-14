@@ -1,7 +1,7 @@
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import Home from './pages/Home'
-import NoFound from './pages/NoFound'
+import NotFound from './pages/NotFound'
 import Lodging from './pages/Lodging'
 import About from './pages/About'
 import { Layout } from './components/Layout'
@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
 		<Route path="/" element = {<Layout><Home /></Layout>} />
 		<Route path="/about" element = {<Layout><About /></Layout>} />
 		<Route path="/lodging/:id" element = {<Layout><Lodging /></Layout>} />
-		<Route path="*" element={<NoFound />} />
+		<Route path="*" element={<Layout><NotFound /></Layout> } />
 	</Routes>
  </BrowserRouter>
 )

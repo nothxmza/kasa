@@ -34,3 +34,18 @@
 		border: none;
 	}
 }
+
+//media queries
+
+@media (max-width: 500px) {
+	.carousel {
+		height: 300px;
+		.buttonLeft, .buttonRight{
+			img{
+				width: 10px;
+				height: 20px;
+			}
+		}
+		
+	}
+}

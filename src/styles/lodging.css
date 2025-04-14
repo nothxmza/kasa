@@ -69,6 +69,26 @@
     flex-direction: column;
     gap: 10px;
   }
+  .wrapperInfo .wrapperData .wrapperTitleAndLocation h1 {
+    font-size: 18px;
+  }
+  .wrapperInfo .wrapperData .wrapperTitleAndLocation h3 {
+    font-size: 14px;
+  }
+  .wrapperInfo .wrapperData .tags {
+    font-size: 10px;
+  }
+  .wrapperInfo .wrapperData .rating svg {
+    width: 18px;
+    height: 18px;
+  }
+  .wrapperInfo .wrapperData .wrapperNameAndImg h3 {
+    font-size: 12px;
+  }
+  .wrapperInfo .wrapperData .wrapperNameAndImg img {
+    width: 32px !important;
+    height: 32px !important;
+  }
   .wrapperInfo .starsAndName {
     flex-direction: row-reverse !important;
     justify-content: space-between;
