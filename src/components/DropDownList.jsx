@@ -15,7 +15,7 @@ export const DropDownList = ({title, content}) => {
 		<div className="dropDownList">
 			<div className="dropDownTitle">
 				<h2>{title}</h2>
-				<span onClick={toggleDropdown}><img src={ isOpen ?  chevronUp : chevronDown} alt="icon chevron" /></span>
+				<span onClick={toggleDropdown}><img src={ isOpen ?  chevronDown : chevronUp} alt="icon chevron" /></span>
 			</div>
 			{isOpen && (
 			<div className="dropDownContent">

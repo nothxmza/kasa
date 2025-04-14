@@ -7,7 +7,7 @@
 .wrapperContent {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .wrapperContent .wrapperInfo {
   display: flex;
@@ -16,7 +16,7 @@
 .wrapperContent .wrapperInfo .wrapperData {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .wrapperContent .wrapperInfo .wrapperData h1 {
   font-size: 36px;
@@ -50,17 +50,28 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1024px) {
+  .wrapperDropDown {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 @media (max-width: 768px) {
   .wrapperInfo {
     flex-direction: column;
+    gap: 10px;
+  }
+  .wrapperInfo .wrapperData {
+    gap: 10px;
+  }
+  .wrapperInfo .wrapperData .wrapperTitleAndLocation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   .wrapperInfo .starsAndName {
     flex-direction: row-reverse !important;
     justify-content: space-between;
     align-items: center;
-  }
-  .wrapperDropDown {
-    flex-direction: column;
-    gap: 20px;
   }
 }

@@ -7,14 +7,14 @@
 .wrapperContent{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   .wrapperInfo{
     display: flex;
     justify-content: space-between;
     .wrapperData{
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
       h1{
         font-size: 36px;
         font-weight: 500;
@@ -50,10 +50,25 @@
 }
 
 //media queries
+@media (max-width: 1024px) {
+  .wrapperDropDown{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
 
 @media (max-width: 768px) {
   .wrapperInfo{
     flex-direction: column;
+    gap: 10px;
+    .wrapperData{
+      gap:10px;
+      .wrapperTitleAndLocation{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
     .starsAndName{
       flex-direction: row-reverse!important;
       justify-content: space-between;
@@ -61,8 +76,5 @@
     }
    
   }
-  .wrapperDropDown{
-    flex-direction: column;
-    gap: 20px;
-  }
+  
 }

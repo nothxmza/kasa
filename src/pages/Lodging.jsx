@@ -25,7 +25,7 @@ console.log(lodging);
 				<div className="wrapperContent">
 					<div className="wrapperInfo">
 						<div className="wrapperData">
-							<div>
+							<div className="wrapperTitleAndLocation">
 								<h1 >{lodging.title}</h1>
 								<h3>{lodging.location}</h3>
 							</div>

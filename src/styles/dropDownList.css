@@ -27,12 +27,7 @@
     width: 480px;
   }
 }
-@media (max-width: 1000px) {
-  .dropDownList {
-    width: 400px;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .dropDownList {
     width: 100%;
   }
