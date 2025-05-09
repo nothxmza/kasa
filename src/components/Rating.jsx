@@ -6,7 +6,7 @@ export const Rating = ({ rating }) => {
 		if (i <= rating) {
 			stars.push(<span key={i}> <Star  color="#FF6060" /></span>);
 		} else {
-			stars.push(<span> <Star  /></span>);
+			stars.push(<span key={i}> <Star  /></span>);
 		}
 	}
 	return (
