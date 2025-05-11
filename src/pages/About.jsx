@@ -5,7 +5,6 @@ import { DropDownList } from "../components/DropDownList"
 import "../styles/about.css"
 
 const About = () => {
-	console.log(data.fiabilite)
 	return(
 		<div className="wrapperAbout">
 			<Banner image={img} title="" />

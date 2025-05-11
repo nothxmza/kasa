@@ -6,7 +6,6 @@ import banner from "../assets/banner.png"
 import { Banner } from "../components/Banner"
 
 const Home = () => {
-	console.log(data)
 	return (
 		<div className="wrapperHome">
 			<Banner image={banner} title="Chez vous, partout et ailleurs" />

@@ -1,16 +1,24 @@
 import "../styles/Lodging.css";
 import {data} from "../data/data";
-import { useParams } from "react-router";
+import { useParams,useNavigate } from "react-router";
 import { Carousel } from "../components/Carousel";
 import { Rating } from "../components/Rating";
 import { Tags } from "../components/tags";
 import { DropDownList } from "../components/DropDownList";
 import "../styles/lodging.css";
+import { useEffect } from "react";
 
 const Lodging = () => {
+
 	const id = useParams().id;
+	const navigate = useNavigate();
 	const lodging = data.filter((item) => item.id === id)[0];
-console.log(lodging);
+	useEffect(() => {
+		if(!lodging) {
+			navigate("*");
+		}
+	}, [lodging]);
+
   return (
 	<>
 		{!lodging ? (
